@@ -7,14 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0356CE1A8F6147003015C4 /* StartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356CD1A8F6147003015C4 /* StartView.xib */; };
+		8A0356D11A8F6839003015C4 /* TaskFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356D01A8F6839003015C4 /* TaskFetcher.m */; };
+		8A0356D31A8F69BB003015C4 /* TaskFetcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356D21A8F69BB003015C4 /* TaskFetcherTests.m */; };
+		8A0356D51A8F6A12003015C4 /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356D41A8F6A12003015C4 /* tasks.json */; };
+		8A0356DC1A8F83D7003015C4 /* TaskViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356DB1A8F83D7003015C4 /* TaskViewControllerTests.m */; };
+		8A0356E01A8F9100003015C4 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356DE1A8F9100003015C4 /* TaskViewController.m */; };
+		8A0356E11A8F9100003015C4 /* TaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356DF1A8F9100003015C4 /* TaskViewController.xib */; };
+		8A0356E31A8F9FEC003015C4 /* emptytasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356E21A8F9FEC003015C4 /* emptytasks.json */; };
+		8A0356E51A8F9FFD003015C4 /* brokenTasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356E41A8F9FFD003015C4 /* brokenTasks.json */; };
+		8A0356EB1A8FACDF003015C4 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356EA1A8FACDF003015C4 /* Task.m */; };
+		8A0356EE1A8FACDF003015C4 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356ED1A8FACDF003015C4 /* Question.m */; };
+		8A0356F21A8FB738003015C4 /* Question+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356F11A8FB738003015C4 /* Question+Create.m */; };
+		8A0356F51A8FB751003015C4 /* Task+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356F41A8FB751003015C4 /* Task+Create.m */; };
+		8A0356F81A8FB776003015C4 /* Option+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356F71A8FB776003015C4 /* Option+Create.m */; };
+		8A0356FB1A8FB983003015C4 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356FA1A8FB983003015C4 /* Option.m */; };
 		8A8BD06B1A8F51E5007004E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06A1A8F51E5007004E3 /* main.m */; };
 		8A8BD06E1A8F51E5007004E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06D1A8F51E5007004E3 /* AppDelegate.m */; };
 		8A8BD0711A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06F1A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld */; };
-		8A8BD0741A8F51E5007004E3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD0731A8F51E5007004E3 /* ViewController.m */; };
-		8A8BD0771A8F51E5007004E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A8BD0751A8F51E5007004E3 /* Main.storyboard */; };
 		8A8BD0791A8F51E5007004E3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A8BD0781A8F51E5007004E3 /* Images.xcassets */; };
-		8A8BD07C1A8F51E5007004E3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A8BD07A1A8F51E5007004E3 /* LaunchScreen.xib */; };
-		8A8BD0881A8F51E6007004E3 /* Crowdlab_Coding_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD0871A8F51E6007004E3 /* Crowdlab_Coding_ChallengeTests.m */; };
+		8A8BD0931A8F52D3007004E3 /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD0921A8F52D3007004E3 /* StartViewController.m */; };
+		8A8BD0951A8F53AE007004E3 /* StartViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD0941A8F53AE007004E3 /* StartViewTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,20 +41,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8A0356CD1A8F6147003015C4 /* StartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartView.xib; sourceTree = "<group>"; };
+		8A0356CF1A8F6839003015C4 /* TaskFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskFetcher.h; sourceTree = "<group>"; };
+		8A0356D01A8F6839003015C4 /* TaskFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskFetcher.m; sourceTree = "<group>"; };
+		8A0356D21A8F69BB003015C4 /* TaskFetcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskFetcherTests.m; sourceTree = "<group>"; };
+		8A0356D41A8F6A12003015C4 /* tasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
+		8A0356DB1A8F83D7003015C4 /* TaskViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewControllerTests.m; sourceTree = "<group>"; };
+		8A0356DD1A8F9100003015C4 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
+		8A0356DE1A8F9100003015C4 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
+		8A0356DF1A8F9100003015C4 /* TaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskViewController.xib; sourceTree = "<group>"; };
+		8A0356E21A8F9FEC003015C4 /* emptytasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emptytasks.json; sourceTree = "<group>"; };
+		8A0356E41A8F9FFD003015C4 /* brokenTasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brokenTasks.json; sourceTree = "<group>"; };
+		8A0356E91A8FACDF003015C4 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		8A0356EA1A8FACDF003015C4 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		8A0356EC1A8FACDF003015C4 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		8A0356ED1A8FACDF003015C4 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		8A0356F01A8FB738003015C4 /* Question+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Question+Create.h"; sourceTree = "<group>"; };
+		8A0356F11A8FB738003015C4 /* Question+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Question+Create.m"; sourceTree = "<group>"; };
+		8A0356F31A8FB751003015C4 /* Task+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Task+Create.h"; sourceTree = "<group>"; };
+		8A0356F41A8FB751003015C4 /* Task+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Task+Create.m"; sourceTree = "<group>"; };
+		8A0356F61A8FB776003015C4 /* Option+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Option+Create.h"; sourceTree = "<group>"; };
+		8A0356F71A8FB776003015C4 /* Option+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Option+Create.m"; sourceTree = "<group>"; };
+		8A0356F91A8FB983003015C4 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		8A0356FA1A8FB983003015C4 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
 		8A8BD0651A8F51E5007004E3 /* Crowdlab Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crowdlab Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8BD0691A8F51E5007004E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A8BD06A1A8F51E5007004E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A8BD06C1A8F51E5007004E3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8A8BD06D1A8F51E5007004E3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8A8BD0701A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crowdlab_Coding_Challenge.xcdatamodel; sourceTree = "<group>"; };
-		8A8BD0721A8F51E5007004E3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8A8BD0731A8F51E5007004E3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8A8BD0761A8F51E5007004E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8A8BD0781A8F51E5007004E3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8A8BD07B1A8F51E5007004E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8A8BD0811A8F51E6007004E3 /* Crowdlab Coding ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crowdlab Coding ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8BD0861A8F51E6007004E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A8BD0871A8F51E6007004E3 /* Crowdlab_Coding_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Crowdlab_Coding_ChallengeTests.m; sourceTree = "<group>"; };
+		8A8BD0911A8F52D3007004E3 /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
+		8A8BD0921A8F52D3007004E3 /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
+		8A8BD0941A8F53AE007004E3 /* StartViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +96,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A0356EF1A8FACF9003015C4 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				8A8BD06F1A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld */,
+				8A0356F31A8FB751003015C4 /* Task+Create.h */,
+				8A0356F41A8FB751003015C4 /* Task+Create.m */,
+				8A0356F01A8FB738003015C4 /* Question+Create.h */,
+				8A0356F11A8FB738003015C4 /* Question+Create.m */,
+				8A0356F61A8FB776003015C4 /* Option+Create.h */,
+				8A0356F71A8FB776003015C4 /* Option+Create.m */,
+				8A0356E91A8FACDF003015C4 /* Task.h */,
+				8A0356EA1A8FACDF003015C4 /* Task.m */,
+				8A0356EC1A8FACDF003015C4 /* Question.h */,
+				8A0356ED1A8FACDF003015C4 /* Question.m */,
+				8A0356F91A8FB983003015C4 /* Option.h */,
+				8A0356FA1A8FB983003015C4 /* Option.m */,
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
 		8A8BD05C1A8F51E5007004E3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,15 +137,17 @@
 		8A8BD0671A8F51E5007004E3 /* Crowdlab Coding Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				8A8BD06C1A8F51E5007004E3 /* AppDelegate.h */,
-				8A8BD06D1A8F51E5007004E3 /* AppDelegate.m */,
-				8A8BD0721A8F51E5007004E3 /* ViewController.h */,
-				8A8BD0731A8F51E5007004E3 /* ViewController.m */,
-				8A8BD0751A8F51E5007004E3 /* Main.storyboard */,
+				8A0356EF1A8FACF9003015C4 /* Data Models */,
 				8A8BD0781A8F51E5007004E3 /* Images.xcassets */,
-				8A8BD07A1A8F51E5007004E3 /* LaunchScreen.xib */,
-				8A8BD06F1A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld */,
 				8A8BD0681A8F51E5007004E3 /* Supporting Files */,
+				8A0356CF1A8F6839003015C4 /* TaskFetcher.h */,
+				8A0356D01A8F6839003015C4 /* TaskFetcher.m */,
+				8A8BD0911A8F52D3007004E3 /* StartViewController.h */,
+				8A8BD0921A8F52D3007004E3 /* StartViewController.m */,
+				8A0356CD1A8F6147003015C4 /* StartView.xib */,
+				8A0356DD1A8F9100003015C4 /* TaskViewController.h */,
+				8A0356DE1A8F9100003015C4 /* TaskViewController.m */,
+				8A0356DF1A8F9100003015C4 /* TaskViewController.xib */,
 			);
 			path = "Crowdlab Coding Challenge";
 			sourceTree = "<group>";
@@ -99,8 +155,13 @@
 		8A8BD0681A8F51E5007004E3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8A8BD06C1A8F51E5007004E3 /* AppDelegate.h */,
+				8A8BD06D1A8F51E5007004E3 /* AppDelegate.m */,
 				8A8BD0691A8F51E5007004E3 /* Info.plist */,
 				8A8BD06A1A8F51E5007004E3 /* main.m */,
+				8A0356D41A8F6A12003015C4 /* tasks.json */,
+				8A0356E21A8F9FEC003015C4 /* emptytasks.json */,
+				8A0356E41A8F9FFD003015C4 /* brokenTasks.json */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -108,8 +169,10 @@
 		8A8BD0841A8F51E6007004E3 /* Crowdlab Coding ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				8A8BD0871A8F51E6007004E3 /* Crowdlab_Coding_ChallengeTests.m */,
 				8A8BD0851A8F51E6007004E3 /* Supporting Files */,
+				8A8BD0941A8F53AE007004E3 /* StartViewTests.m */,
+				8A0356D21A8F69BB003015C4 /* TaskFetcherTests.m */,
+				8A0356DB1A8F83D7003015C4 /* TaskViewControllerTests.m */,
 			);
 			path = "Crowdlab Coding ChallengeTests";
 			sourceTree = "<group>";
@@ -202,9 +265,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8BD0771A8F51E5007004E3 /* Main.storyboard in Resources */,
-				8A8BD07C1A8F51E5007004E3 /* LaunchScreen.xib in Resources */,
 				8A8BD0791A8F51E5007004E3 /* Images.xcassets in Resources */,
+				8A0356E11A8F9100003015C4 /* TaskViewController.xib in Resources */,
+				8A0356CE1A8F6147003015C4 /* StartView.xib in Resources */,
+				8A0356E51A8F9FFD003015C4 /* brokenTasks.json in Resources */,
+				8A0356E31A8F9FEC003015C4 /* emptytasks.json in Resources */,
+				8A0356D51A8F6A12003015C4 /* tasks.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,10 +288,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A0356FB1A8FB983003015C4 /* Option.m in Sources */,
 				8A8BD06E1A8F51E5007004E3 /* AppDelegate.m in Sources */,
+				8A0356D11A8F6839003015C4 /* TaskFetcher.m in Sources */,
+				8A0356F21A8FB738003015C4 /* Question+Create.m in Sources */,
+				8A0356E01A8F9100003015C4 /* TaskViewController.m in Sources */,
+				8A0356EB1A8FACDF003015C4 /* Task.m in Sources */,
+				8A0356F81A8FB776003015C4 /* Option+Create.m in Sources */,
+				8A8BD0931A8F52D3007004E3 /* StartViewController.m in Sources */,
+				8A0356EE1A8FACDF003015C4 /* Question.m in Sources */,
 				8A8BD06B1A8F51E5007004E3 /* main.m in Sources */,
-				8A8BD0741A8F51E5007004E3 /* ViewController.m in Sources */,
 				8A8BD0711A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld in Sources */,
+				8A0356F51A8FB751003015C4 /* Task+Create.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +307,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8BD0881A8F51E6007004E3 /* Crowdlab_Coding_ChallengeTests.m in Sources */,
+				8A0356D31A8F69BB003015C4 /* TaskFetcherTests.m in Sources */,
+				8A0356DC1A8F83D7003015C4 /* TaskViewControllerTests.m in Sources */,
+				8A8BD0951A8F53AE007004E3 /* StartViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,25 +322,6 @@
 			targetProxy = 8A8BD0821A8F51E6007004E3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		8A8BD0751A8F51E5007004E3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A8BD0761A8F51E5007004E3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8A8BD07A1A8F51E5007004E3 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8A8BD07B1A8F51E5007004E3 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8A8BD0891A8F51E6007004E3 /* Debug */ = {
@@ -416,6 +473,7 @@
 				8A8BD08D1A8F51E6007004E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8A8BD08E1A8F51E6007004E3 /* Build configuration list for PBXNativeTarget "Crowdlab Coding ChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +482,7 @@
 				8A8BD0901A8F51E6007004E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

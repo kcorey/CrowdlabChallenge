@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController">
+            <connections>
+                <outlet property="explainText" destination="tY1-Ds-5vv" id="hY2-qN-1G0"/>
+                <outlet property="parseButton" destination="kMI-pz-CaO" id="awG-T6-p6a"/>
+                <outlet property="urlForJSON" destination="dSq-WL-tRJ" id="trQ-ob-4sP"/>
+                <outlet property="view" destination="iN0-l3-epB" id="TVg-82-Cax"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="url of json to parse, blank for default" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dSq-WL-tRJ">
+                    <rect key="frame" x="8" y="71" width="584" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMI-pz-CaO">
+                    <rect key="frame" x="277" y="109" width="40" height="30"/>
+                    <state key="normal" title="Parse">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="parseUrl:" destination="-1" eventType="touchUpInside" id="QdO-7B-aRV"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Leave the text field blank to test the internal JSON file.  Provide a URL to test a remote JSON file." translatesAutoresizingMaskIntoConstraints="NO" id="tY1-Ds-5vv">
+                    <rect key="frame" x="8" y="153" width="584" height="439"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="kMI-pz-CaO" firstAttribute="top" secondItem="dSq-WL-tRJ" secondAttribute="bottom" constant="8" symbolic="YES" id="5VS-Mb-2OH"/>
+                <constraint firstItem="dSq-WL-tRJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="71" id="8Ja-hh-F9k"/>
+                <constraint firstItem="tY1-Ds-5vv" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="YCt-83-nZn"/>
+                <constraint firstItem="tY1-Ds-5vv" firstAttribute="trailing" secondItem="dSq-WL-tRJ" secondAttribute="trailing" id="bBF-4p-fXY"/>
+                <constraint firstItem="tY1-Ds-5vv" firstAttribute="top" secondItem="kMI-pz-CaO" secondAttribute="bottom" constant="14" id="fKa-GK-fMh"/>
+                <constraint firstAttribute="centerX" secondItem="kMI-pz-CaO" secondAttribute="centerX" constant="3" id="mEP-LG-B3m"/>
+                <constraint firstItem="tY1-Ds-5vv" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottomMargin" id="rN3-xL-VG7"/>
+                <constraint firstItem="dSq-WL-tRJ" firstAttribute="leading" secondItem="tY1-Ds-5vv" secondAttribute="leading" id="u2g-v9-bO0"/>
+                <constraint firstItem="tY1-Ds-5vv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="uX8-32-Hbx"/>
+            </constraints>
+        </view>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qPE-lM-v0I">
+            <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+        </button>
+    </objects>
+</document>
