@@ -9,6 +9,9 @@
 //
 
 #import "TaskFetcher.h"
+#import "Task+Create.h"
+#import "Question+Create.h"
+#import "Option+Create.h"
 
 @implementation TaskFetcher
 
@@ -95,6 +98,18 @@ static TaskFetcher *sharedInstance = nil;
     return error;
 }
 
+// Assumes that self.jsonResults contains the NSArray of objects
+// obtained from the JSON input.
+-(NSError *)insertJSONUsingContext:(NSManagedObjectContext *)context {
+    NSError *error = nil;
+    
+    for (NSDictionary *item in self.jsonResults) {
+        [Task insertFromDict:item withContext:self.dbcontext];
+    }
+
+    return error;
+}
+
 -(NSError *)parseUrl:(NSString *)theUrlToParse {
     NSError *error;
     
@@ -104,9 +119,14 @@ static TaskFetcher *sharedInstance = nil;
     error = [self readfile];
 
     if (!error) {
-        NSData *fileData = [NSData dataWithContentsOfFile:self.parsedUrl];
+        NSData *fileData = [self.fileContents dataUsingEncoding:NSUTF8StringEncoding];
         error = [self readJSONFromFileData:fileData];
     }
+    
+    if (!error) {
+        error = [self insertJSONUsingContext:self.dbcontext];
+    }
+    
     return error;
 }
 

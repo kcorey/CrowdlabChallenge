@@ -32,13 +32,13 @@
         result = [NSEntityDescription insertNewObjectForEntityForName:@"Question" inManagedObjectContext:context];
         
         result.dbid = [input objectForKey:@"id"];
-        result.title = [[input objectForKey:@"type"] description];
+        result.title = [[input objectForKey:@"title"] description];
         result.summary = [[input objectForKey:@"label"] description];
         
         NSArray *options = [input objectForKey:@"options"];
         for (NSDictionary *item in options) {
             NSMutableDictionary *itemMutable = [item mutableCopy];
-            [itemMutable setObject:self forKey:@"question"];
+            [itemMutable setObject:result forKey:@"question"];
             [Option insertFromDict:itemMutable
                        withContext:context];
         }

@@ -1,0 +1,32 @@
+So here's my stab at the Crowdlab Coding Challenge.
+
+I've used this as an excuse to go ever-so-slightly overboard and really play with TDD.  Funny thing...once you've gotten started, you don't really want to stop using TDD.  Kind of like pouring spoilt milk into a fresh batch...it ruins it all.
+
+The downside, of course, is that my TDD muscles are very weak, which means this is much slower development pattern.  The flipside, hopefully, is that it's much more likely to be bullet-proof in the long run.
+
+Overview
+========
+
+The app delivered here is broken into distinct groups:
+
+Crowdlab Coding Challenge
+-------------------------
+Data Models - the data model itself, the generated classes, and the categories to go with them.
+
+Images.xcassets - the image catalog.  I'm not going to make much of this in this demo.
+
+View Controllers - the visible part of the app, the view controllers should be fairly self-explanatory.  Note that I purposely chose individual .xib files over Storyboards, as it is /much/ easier to create, manipulate, and test Viewcontrollers as .xibs.  If you use Storyboards, you can still do it, except there's a bit more boilerplate to instantiate the ViewController (http://iosunittesting.com/using-storyboards/).  That and the unbelievable pain of trying to merge Storyboard files with multiple developers has turned me way off storyboards.
+
+Crowdlab Coding ChallengeTests
+------------------------------
+Each view has its own tests, as well as TaskFetcher.  I've also broken the database tests out as a separate file.
+
+
+
+
+Weaknesses of this Challenge
+============================
+1) One weakness in this design is the error handling for when inserting an object into Core Data.  If there's an error (or already more than one object with the same id) an error should be flagged...but there's no way currently to pass the error back.  That's smelly.
+2) Come to think of it, there were a few places where we could return a reference or an error.  I'm getting a powerful smell from that now.
+3) The data is perfect.  That's great in a production machine.  It's horrible for testing.  I've created two different tests (empty) and (broken) for input data.  That's not adequeate, though.  The test data should contain type mismatches, mispellings, omitted attributes, questions without options, tasks without questions, null values, repeated IDs, etc, and the code should "just" handle this.  Of course, that's beyond the scope of this project...just thought I'd mention it.  In future challenges, perhaps there should be a perfect data file and a rubbish data file to break tests and code upon?
+

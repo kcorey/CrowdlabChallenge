@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "TaskFetcher.h"
+#import <CoreData/CoreData.h>
 
-@interface TaskViewController : UITableViewController
+@interface TaskViewController : UITableViewController <NSFetchedResultsControllerDelegate>
 @property (strong, nonatomic) NSString *urlToParse;
 @property (strong, nonatomic) NSString *parsedUrl;
+
+@property (strong, nonatomic) NSManagedObjectContext *dbcontext;
+@property (nonatomic) NSFetchedResultsController *fetchedResultsController;
+
 -(void)parseUrl;
 
 @end

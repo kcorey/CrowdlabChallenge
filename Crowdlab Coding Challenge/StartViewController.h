@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "TaskFetcher.h"
+#import <CoreData/CoreData.h>
 
 @interface StartViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIView *view;
 @property (weak, nonatomic) IBOutlet UITextField *urlForJSON;
 @property (weak, nonatomic) IBOutlet UIButton *parseButton;
 @property (weak, nonatomic) IBOutlet UITextView *explainText;
+
+@property (strong, nonatomic) NSManagedObjectContext *dbcontext;
 
 @end

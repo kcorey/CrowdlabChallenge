@@ -15,7 +15,7 @@
     Option *result = nil;
     
     // Check to see if it's already in the database.
-    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Question"];
+    NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Option"];
     request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"dbid" ascending:YES]];
     request.predicate = [NSPredicate predicateWithFormat:@"dbid = %@",
                          [input objectForKey:@"id"]];

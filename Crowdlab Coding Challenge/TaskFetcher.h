@@ -16,12 +16,13 @@
 @property (strong, nonatomic) NSString *fileContents;
 @property (strong, nonatomic) NSArray *jsonResults;
 @property (strong, nonatomic) NSString *defaultFilename;
-
+@property (strong, nonatomic) NSManagedObjectContext *dbcontext;
 
 +(TaskFetcher *)getFetcher;
 
 -(NSError *)parseUrl:(NSString *)urlToParse;
 -(NSString *)actualUrl:(NSString *)urlToParse;
+-(NSError *)insertJSONUsingContext:(NSManagedObjectContext *)context;
 
 -(void)forgetMe;
 

@@ -37,6 +37,8 @@
 - (IBAction)parseUrl:(id)sender {
     TaskViewController *taskVC = [[TaskViewController alloc] init];
     taskVC.urlToParse = self.urlForJSON.text;
+    taskVC.dbcontext = self.dbcontext;
+    
     [self.navigationController pushViewController:taskVC animated:YES];
 }
 

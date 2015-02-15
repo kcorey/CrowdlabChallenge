@@ -26,18 +26,20 @@
     if (!matches || [matches count] > 1) {
         // That's odd...found an error.  Report it.  Hrm...return type is Task*.
         // Wish this were Swift where we could return tuples.
+        // Perhaps store the error in a property in the TaskFetcher Singleton.  Can
+        // you say "Thread-unsafe Global Variables"?  Meh.
     } else if (![matches count]) {
         // Not in the database yet...create it.
         result = [NSEntityDescription insertNewObjectForEntityForName:@"Task" inManagedObjectContext:context];
         
         result.dbid = [input objectForKey:@"id"];
-        result.title = [[input objectForKey:@"type"] description];
+        result.title = [[input objectForKey:@"title"] description];
         result.hidden = [input objectForKey:@"hidden"];
         
         NSArray *questions = [input objectForKey:@"questions"];
         for (NSDictionary *item in questions) {
             NSMutableDictionary *itemMutable = [item mutableCopy];
-            [itemMutable setObject:self forKey:@"task"];
+            [itemMutable setObject:result forKey:@"task"];
             [Question insertFromDict:itemMutable
                          withContext:context];
         }

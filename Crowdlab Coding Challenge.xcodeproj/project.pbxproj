@@ -22,6 +22,9 @@
 		8A0356F51A8FB751003015C4 /* Task+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356F41A8FB751003015C4 /* Task+Create.m */; };
 		8A0356F81A8FB776003015C4 /* Option+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356F71A8FB776003015C4 /* Option+Create.m */; };
 		8A0356FB1A8FB983003015C4 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356FA1A8FB983003015C4 /* Option.m */; };
+		8A0356FD1A8FC511003015C4 /* DatabaseTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356FC1A8FC511003015C4 /* DatabaseTesting.m */; };
+		8A0356FF1A8FF81E003015C4 /* Overview.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356FE1A8FF81E003015C4 /* Overview.txt */; };
+		8A0357011A900C91003015C4 /* TaskViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0357001A900C91003015C4 /* TaskViewCell.xib */; };
 		8A8BD06B1A8F51E5007004E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06A1A8F51E5007004E3 /* main.m */; };
 		8A8BD06E1A8F51E5007004E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06D1A8F51E5007004E3 /* AppDelegate.m */; };
 		8A8BD0711A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06F1A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld */; };
@@ -64,6 +67,9 @@
 		8A0356F71A8FB776003015C4 /* Option+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Option+Create.m"; sourceTree = "<group>"; };
 		8A0356F91A8FB983003015C4 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
 		8A0356FA1A8FB983003015C4 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
+		8A0356FC1A8FC511003015C4 /* DatabaseTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseTesting.m; sourceTree = "<group>"; };
+		8A0356FE1A8FF81E003015C4 /* Overview.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Overview.txt; sourceTree = "<group>"; };
+		8A0357001A900C91003015C4 /* TaskViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskViewCell.xib; sourceTree = "<group>"; };
 		8A8BD0651A8F51E5007004E3 /* Crowdlab Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crowdlab Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8BD0691A8F51E5007004E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A8BD06A1A8F51E5007004E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -137,9 +143,9 @@
 		8A8BD0671A8F51E5007004E3 /* Crowdlab Coding Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				8A0356FE1A8FF81E003015C4 /* Overview.txt */,
 				8A0356EF1A8FACF9003015C4 /* Data Models */,
 				8A8BD0781A8F51E5007004E3 /* Images.xcassets */,
-				8A8BD0681A8F51E5007004E3 /* Supporting Files */,
 				8A0356CF1A8F6839003015C4 /* TaskFetcher.h */,
 				8A0356D01A8F6839003015C4 /* TaskFetcher.m */,
 				8A8BD0911A8F52D3007004E3 /* StartViewController.h */,
@@ -148,6 +154,8 @@
 				8A0356DD1A8F9100003015C4 /* TaskViewController.h */,
 				8A0356DE1A8F9100003015C4 /* TaskViewController.m */,
 				8A0356DF1A8F9100003015C4 /* TaskViewController.xib */,
+				8A0357001A900C91003015C4 /* TaskViewCell.xib */,
+				8A8BD0681A8F51E5007004E3 /* Supporting Files */,
 			);
 			path = "Crowdlab Coding Challenge";
 			sourceTree = "<group>";
@@ -173,6 +181,7 @@
 				8A8BD0941A8F53AE007004E3 /* StartViewTests.m */,
 				8A0356D21A8F69BB003015C4 /* TaskFetcherTests.m */,
 				8A0356DB1A8F83D7003015C4 /* TaskViewControllerTests.m */,
+				8A0356FC1A8FC511003015C4 /* DatabaseTesting.m */,
 			);
 			path = "Crowdlab Coding ChallengeTests";
 			sourceTree = "<group>";
@@ -270,7 +279,9 @@
 				8A0356CE1A8F6147003015C4 /* StartView.xib in Resources */,
 				8A0356E51A8F9FFD003015C4 /* brokenTasks.json in Resources */,
 				8A0356E31A8F9FEC003015C4 /* emptytasks.json in Resources */,
+				8A0356FF1A8FF81E003015C4 /* Overview.txt in Resources */,
 				8A0356D51A8F6A12003015C4 /* tasks.json in Resources */,
+				8A0357011A900C91003015C4 /* TaskViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +321,7 @@
 				8A0356D31A8F69BB003015C4 /* TaskFetcherTests.m in Sources */,
 				8A0356DC1A8F83D7003015C4 /* TaskViewControllerTests.m in Sources */,
 				8A8BD0951A8F53AE007004E3 /* StartViewTests.m in Sources */,
+				8A0356FD1A8FC511003015C4 /* DatabaseTesting.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

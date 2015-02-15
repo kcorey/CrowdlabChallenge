@@ -23,7 +23,9 @@
     self.uiNavigationController = [[UINavigationController alloc] init];
     [self.window setRootViewController:self.uiNavigationController];
     
-    [self.uiNavigationController pushViewController:[[StartViewController alloc] init] animated:YES];
+    StartViewController *startVC = [[StartViewController alloc] init];
+    startVC.dbcontext = [self managedObjectContext];
+    [self.uiNavigationController pushViewController:startVC animated:YES];
     [self.window makeKeyAndVisible];
     
     return YES;
