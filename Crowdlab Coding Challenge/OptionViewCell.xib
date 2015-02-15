@@ -21,6 +21,8 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="ZIf-gn-st6" firstAttribute="top" secondItem="sYH-fl-I4x" secondAttribute="topMargin" constant="16" id="01m-zq-Sg8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZIf-gn-st6" secondAttribute="bottom" constant="15" id="Ibm-Ok-gmt"/>
                     <constraint firstItem="ZIf-gn-st6" firstAttribute="leading" secondItem="sYH-fl-I4x" secondAttribute="leadingMargin" id="V3f-Qz-8YG"/>
                     <constraint firstItem="ZIf-gn-st6" firstAttribute="trailing" secondItem="sYH-fl-I4x" secondAttribute="trailingMargin" id="iDb-hk-Xl1"/>
                     <constraint firstAttribute="centerY" secondItem="ZIf-gn-st6" secondAttribute="centerY" id="saQ-4M-Cvi"/>

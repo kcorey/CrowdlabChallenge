@@ -7,7 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import "Question.h"
+#import "Option.h"
 
 @interface OptionTextViewController : UIViewController
+@property (strong, nonatomic) NSManagedObjectContext *dbcontext;
+@property (nonatomic) NSFetchedResultsController *fetchedResultsController;
+@property (strong, nonatomic) Question *question;
+@property (strong, nonatomic) Option *theOption;
+
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *optionLabel;
+@property (weak, nonatomic) IBOutlet UITextView *answerTextArea;
+@property (weak, nonatomic) IBOutlet UIButton *saveButton;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end

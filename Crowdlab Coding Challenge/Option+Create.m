@@ -27,7 +27,6 @@
         // Wish this were Swift where we could return tuples.
     } else if (![matches count]) {
         // Not in the database yet...create it.
-    
         result = [NSEntityDescription insertNewObjectForEntityForName:@"Option" inManagedObjectContext:context];
         
         result.dbid = [input objectForKey:@"id"];

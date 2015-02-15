@@ -63,7 +63,6 @@ static TaskFetcher *sharedInstance = nil;
 - (NSError *)readfile {
     NSError *error;
     if ([[NSFileManager defaultManager] fileExistsAtPath:self.parsedUrl]) {
-        NSLog(@"File Exists..");
         self.fileContents = [NSString stringWithContentsOfFile:self.parsedUrl encoding:NSUTF8StringEncoding error:&error];
         if (error) {
             NSLog(@"When trying to read file '%@', got error of '%@'.",self.parsedUrl,error.localizedDescription);

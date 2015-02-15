@@ -2,7 +2,7 @@
 //  Option.m
 //  Crowdlab Coding Challenge
 //
-//  Created by Ken Corey on 14/02/2015.
+//  Created by Ken Corey on 15/02/2015.
 //  Copyright (c) 2015 Flippin' Bits Software, Ltd. All rights reserved.
 //
 
@@ -15,6 +15,7 @@
 @dynamic dbid;
 @dynamic type;
 @dynamic label;
+@dynamic answer;
 @dynamic question;
 
 @end

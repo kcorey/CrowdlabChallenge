@@ -9,6 +9,7 @@
 #import "QuestionViewController.h"
 #import "Question.h"
 #import "OptionViewController.h"
+#import "OptionTextViewController.h"
 
 @interface QuestionViewController ()
 
@@ -60,9 +61,7 @@
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSLog(@"Tapped on row %d",[indexPath row]);
-    
-    OptionViewController *option = [[OptionViewController alloc] init];
+    OptionTextViewController *option = [[OptionTextViewController alloc] init];
     
     Question *question = [[self.fetchedResultsController fetchedObjects] objectAtIndex:[indexPath row]];
     option.question = question;

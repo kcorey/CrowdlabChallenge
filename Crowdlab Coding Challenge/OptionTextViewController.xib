@@ -1,19 +1,120 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionTextViewController">
             <connections>
+                <outlet property="answerTextArea" destination="Rqs-oD-8OM" id="6kR-0V-DUB"/>
+                <outlet property="optionLabel" destination="i5o-kf-mzT" id="c9b-uo-7Ye"/>
+                <outlet property="questionLabel" destination="k6Z-TK-c89" id="71n-KM-yv5"/>
+                <outlet property="scrollView" destination="vcL-Zn-0EA" id="Vxy-hY-d21"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcL-Zn-0EA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k6Z-TK-c89" userLabel="Question Label">
+                            <rect key="frame" x="8" y="70" width="320" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="H0q-GT-iji"/>
+                                <constraint firstAttribute="width" constant="498" id="j2k-RN-p9a"/>
+                                <constraint firstAttribute="height" constant="21" id="qNI-Uq-InZ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="j2k-RN-p9a"/>
+                                    <exclude reference="qNI-Uq-InZ"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5o-kf-mzT" userLabel="Option Label">
+                            <rect key="frame" x="8" y="115" width="320" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="0ER-iE-H42"/>
+                                <constraint firstAttribute="width" constant="498" id="4yt-8J-meS"/>
+                                <constraint firstAttribute="height" constant="21" id="lhy-PZ-qTa"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="0ER-iE-H42"/>
+                                    <exclude reference="4yt-8J-meS"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqs-oD-8OM">
+                            <rect key="frame" x="8" y="157" width="304" height="188"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="188" id="9cY-lc-snb"/>
+                                <constraint firstAttribute="height" constant="153" id="NOH-m2-pdF"/>
+                            </constraints>
+                            <inset key="scrollIndicatorInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="NOH-m2-pdF"/>
+                                </mask>
+                            </variation>
+                        </textView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="k6Z-TK-c89" firstAttribute="width" secondItem="vcL-Zn-0EA" secondAttribute="width" id="5ig-VF-5sZ"/>
+                        <constraint firstAttribute="bottom" secondItem="i5o-kf-mzT" secondAttribute="bottom" constant="464" id="EXv-KH-xrM"/>
+                        <constraint firstAttribute="bottom" secondItem="k6Z-TK-c89" secondAttribute="bottom" constant="509" id="EhS-n5-eCX"/>
+                        <constraint firstItem="k6Z-TK-c89" firstAttribute="leading" secondItem="vcL-Zn-0EA" secondAttribute="leading" constant="8" id="J40-cI-lvK"/>
+                        <constraint firstAttribute="width" secondItem="i5o-kf-mzT" secondAttribute="width" id="JJo-1H-dzB"/>
+                        <constraint firstAttribute="bottom" secondItem="i5o-kf-mzT" secondAttribute="bottom" constant="464" id="Kp7-WI-QCf"/>
+                        <constraint firstItem="i5o-kf-mzT" firstAttribute="top" secondItem="k6Z-TK-c89" secondAttribute="bottom" constant="24" id="LpR-a9-Huc"/>
+                        <constraint firstItem="Rqs-oD-8OM" firstAttribute="trailing" secondItem="vcL-Zn-0EA" secondAttribute="trailingMargin" constant="16" id="NWS-vP-FD8"/>
+                        <constraint firstItem="Rqs-oD-8OM" firstAttribute="top" secondItem="i5o-kf-mzT" secondAttribute="bottom" constant="21" id="Qfb-nY-1eN"/>
+                        <constraint firstItem="i5o-kf-mzT" firstAttribute="top" secondItem="vcL-Zn-0EA" secondAttribute="top" constant="115" id="RCR-Sf-x2g"/>
+                        <constraint firstAttribute="bottom" secondItem="Rqs-oD-8OM" secondAttribute="bottom" constant="8" id="YFj-L8-BqL"/>
+                        <constraint firstAttribute="centerX" secondItem="k6Z-TK-c89" secondAttribute="centerX" constant="20" id="ayc-iQ-F9g"/>
+                        <constraint firstAttribute="width" secondItem="Rqs-oD-8OM" secondAttribute="width" constant="16" id="b0z-Da-jmc"/>
+                        <constraint firstItem="Rqs-oD-8OM" firstAttribute="leading" secondItem="vcL-Zn-0EA" secondAttribute="leadingMargin" id="gzH-KG-9GM"/>
+                        <constraint firstItem="i5o-kf-mzT" firstAttribute="top" secondItem="vcL-Zn-0EA" secondAttribute="top" constant="115" id="kBB-5E-iew"/>
+                        <constraint firstAttribute="centerX" secondItem="i5o-kf-mzT" secondAttribute="centerX" constant="20" id="sbY-ts-0gX"/>
+                        <constraint firstItem="i5o-kf-mzT" firstAttribute="leading" secondItem="vcL-Zn-0EA" secondAttribute="leading" constant="8" id="szd-qG-LDU"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="EhS-n5-eCX"/>
+                            <exclude reference="ayc-iQ-F9g"/>
+                            <exclude reference="EXv-KH-xrM"/>
+                            <exclude reference="kBB-5E-iew"/>
+                            <exclude reference="sbY-ts-0gX"/>
+                            <exclude reference="YFj-L8-BqL"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="0.83921568627450982" green="1" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="vcL-Zn-0EA" secondAttribute="centerY" id="TUa-zM-55q"/>
+                <constraint firstItem="vcL-Zn-0EA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="de3-eL-SCg"/>
+                <constraint firstAttribute="bottom" secondItem="vcL-Zn-0EA" secondAttribute="bottom" id="egN-kz-Iif"/>
+                <constraint firstAttribute="trailing" secondItem="vcL-Zn-0EA" secondAttribute="trailing" id="i58-06-9Nt"/>
+                <constraint firstItem="vcL-Zn-0EA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nTB-fx-cBn"/>
+                <constraint firstAttribute="centerX" secondItem="vcL-Zn-0EA" secondAttribute="centerX" id="nZy-eZ-nHI"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
 </document>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14D72i" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Option" representedClassName="Option" syncable="YES">
+        <attribute name="answer" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dbid" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
         <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
@@ -22,6 +23,6 @@
     <elements>
         <element name="Task" positionX="-108" positionY="-13" width="128" height="103"/>
         <element name="Question" positionX="90" positionY="-18" width="128" height="118"/>
-        <element name="Option" positionX="295" positionY="-4" width="128" height="103"/>
+        <element name="Option" positionX="277" positionY="-13" width="128" height="118"/>
     </elements>
 </model>

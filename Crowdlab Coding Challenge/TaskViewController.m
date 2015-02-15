@@ -73,8 +73,6 @@
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSLog(@"Tapped on row %d",[indexPath row]);
-
     QuestionViewController *question = [[QuestionViewController alloc] init];
 
     Task *task = [[self.fetchedResultsController fetchedObjects] objectAtIndex:[indexPath row]];

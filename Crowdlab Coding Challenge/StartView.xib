@@ -32,9 +32,10 @@
                         <action selector="parseUrl:" destination="-1" eventType="touchUpInside" id="QdO-7B-aRV"/>
                     </connections>
                 </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Leave the text field blank to test the internal JSON file.  Provide a URL to test a remote JSON file." translatesAutoresizingMaskIntoConstraints="NO" id="tY1-Ds-5vv">
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tY1-Ds-5vv">
                     <rect key="frame" x="8" y="153" width="584" height="439"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">Leave the text field blank to test the internal JSON file.  I had originally meant to allow you to provide a URL to test a remote JSON file...but it's not implemented.  Just press 'Parse' above.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
