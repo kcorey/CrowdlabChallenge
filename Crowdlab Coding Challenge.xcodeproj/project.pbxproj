@@ -25,6 +25,16 @@
 		8A0356FF1A8FF81E003015C4 /* Overview.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356FE1A8FF81E003015C4 /* Overview.txt */; };
 		8A0357011A900C91003015C4 /* TaskViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0357001A900C91003015C4 /* TaskViewCell.xib */; };
 		8A0357041A90B1B6003015C4 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0357031A90B1B6003015C4 /* TaskViewController.m */; };
+		8A0357081A90BF6B003015C4 /* QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0357061A90BF6B003015C4 /* QuestionViewController.m */; };
+		8A0357091A90BF6B003015C4 /* QuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0357071A90BF6B003015C4 /* QuestionViewController.xib */; };
+		8A03570B1A90BF9A003015C4 /* QuestionViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A03570A1A90BF9A003015C4 /* QuestionViewControllerTests.m */; };
+		8A03570D1A90C20E003015C4 /* QuestionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A03570C1A90C20E003015C4 /* QuestionViewCell.xib */; };
+		8A03570F1A90CC2A003015C4 /* OptionViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A03570E1A90CC2A003015C4 /* OptionViewControllerTests.m */; };
+		8A0357131A90CD04003015C4 /* OptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0357111A90CD04003015C4 /* OptionViewController.m */; };
+		8A0357141A90CD04003015C4 /* OptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0357121A90CD04003015C4 /* OptionViewController.xib */; };
+		8A0357161A90CD1C003015C4 /* OptionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0357151A90CD1C003015C4 /* OptionViewCell.xib */; };
+		8A03571A1A90D9E1003015C4 /* OptionTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0357181A90D9E1003015C4 /* OptionTextViewController.m */; };
+		8A03571B1A90D9E1003015C4 /* OptionTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0357191A90D9E1003015C4 /* OptionTextViewController.xib */; };
 		8A8BD06B1A8F51E5007004E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06A1A8F51E5007004E3 /* main.m */; };
 		8A8BD06E1A8F51E5007004E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06D1A8F51E5007004E3 /* AppDelegate.m */; };
 		8A8BD0711A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06F1A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld */; };
@@ -70,6 +80,19 @@
 		8A0357001A900C91003015C4 /* TaskViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskViewCell.xib; sourceTree = "<group>"; };
 		8A0357021A90B1B6003015C4 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
 		8A0357031A90B1B6003015C4 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
+		8A0357051A90BF6B003015C4 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
+		8A0357061A90BF6B003015C4 /* QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewController.m; sourceTree = "<group>"; };
+		8A0357071A90BF6B003015C4 /* QuestionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionViewController.xib; sourceTree = "<group>"; };
+		8A03570A1A90BF9A003015C4 /* QuestionViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionViewControllerTests.m; sourceTree = "<group>"; };
+		8A03570C1A90C20E003015C4 /* QuestionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QuestionViewCell.xib; sourceTree = "<group>"; };
+		8A03570E1A90CC2A003015C4 /* OptionViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionViewControllerTests.m; sourceTree = "<group>"; };
+		8A0357101A90CD04003015C4 /* OptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionViewController.h; sourceTree = "<group>"; };
+		8A0357111A90CD04003015C4 /* OptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionViewController.m; sourceTree = "<group>"; };
+		8A0357121A90CD04003015C4 /* OptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionViewController.xib; sourceTree = "<group>"; };
+		8A0357151A90CD1C003015C4 /* OptionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionViewCell.xib; sourceTree = "<group>"; };
+		8A0357171A90D9E1003015C4 /* OptionTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionTextViewController.h; sourceTree = "<group>"; };
+		8A0357181A90D9E1003015C4 /* OptionTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionTextViewController.m; sourceTree = "<group>"; };
+		8A0357191A90D9E1003015C4 /* OptionTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionTextViewController.xib; sourceTree = "<group>"; };
 		8A8BD0651A8F51E5007004E3 /* Crowdlab Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crowdlab Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8BD0691A8F51E5007004E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A8BD06A1A8F51E5007004E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -155,6 +178,17 @@
 				8A0357031A90B1B6003015C4 /* TaskViewController.m */,
 				8A0356DF1A8F9100003015C4 /* TaskViewController.xib */,
 				8A0357001A900C91003015C4 /* TaskViewCell.xib */,
+				8A0357051A90BF6B003015C4 /* QuestionViewController.h */,
+				8A0357061A90BF6B003015C4 /* QuestionViewController.m */,
+				8A0357071A90BF6B003015C4 /* QuestionViewController.xib */,
+				8A03570C1A90C20E003015C4 /* QuestionViewCell.xib */,
+				8A0357101A90CD04003015C4 /* OptionViewController.h */,
+				8A0357111A90CD04003015C4 /* OptionViewController.m */,
+				8A0357121A90CD04003015C4 /* OptionViewController.xib */,
+				8A0357151A90CD1C003015C4 /* OptionViewCell.xib */,
+				8A0357171A90D9E1003015C4 /* OptionTextViewController.h */,
+				8A0357181A90D9E1003015C4 /* OptionTextViewController.m */,
+				8A0357191A90D9E1003015C4 /* OptionTextViewController.xib */,
 				8A8BD0681A8F51E5007004E3 /* Supporting Files */,
 			);
 			path = "Crowdlab Coding Challenge";
@@ -178,10 +212,12 @@
 			isa = PBXGroup;
 			children = (
 				8A8BD0851A8F51E6007004E3 /* Supporting Files */,
+				8A0356FC1A8FC511003015C4 /* DatabaseTesting.m */,
 				8A8BD0941A8F53AE007004E3 /* StartViewTests.m */,
 				8A0356D21A8F69BB003015C4 /* TaskFetcherTests.m */,
 				8A0356DB1A8F83D7003015C4 /* TaskViewControllerTests.m */,
-				8A0356FC1A8FC511003015C4 /* DatabaseTesting.m */,
+				8A03570A1A90BF9A003015C4 /* QuestionViewControllerTests.m */,
+				8A03570E1A90CC2A003015C4 /* OptionViewControllerTests.m */,
 			);
 			path = "Crowdlab Coding ChallengeTests";
 			sourceTree = "<group>";
@@ -279,9 +315,14 @@
 				8A0356CE1A8F6147003015C4 /* StartView.xib in Resources */,
 				8A0356E51A8F9FFD003015C4 /* brokenTasks.json in Resources */,
 				8A0356E31A8F9FEC003015C4 /* emptytasks.json in Resources */,
+				8A0357141A90CD04003015C4 /* OptionViewController.xib in Resources */,
+				8A03571B1A90D9E1003015C4 /* OptionTextViewController.xib in Resources */,
 				8A0356FF1A8FF81E003015C4 /* Overview.txt in Resources */,
+				8A0357161A90CD1C003015C4 /* OptionViewCell.xib in Resources */,
+				8A03570D1A90C20E003015C4 /* QuestionViewCell.xib in Resources */,
 				8A0356D51A8F6A12003015C4 /* tasks.json in Resources */,
 				8A0357011A900C91003015C4 /* TaskViewCell.xib in Resources */,
+				8A0357091A90BF6B003015C4 /* QuestionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +344,17 @@
 				8A8BD06E1A8F51E5007004E3 /* AppDelegate.m in Sources */,
 				8A0356D11A8F6839003015C4 /* TaskFetcher.m in Sources */,
 				8A0356F21A8FB738003015C4 /* Question+Create.m in Sources */,
+				8A03571A1A90D9E1003015C4 /* OptionTextViewController.m in Sources */,
 				8A0356EB1A8FACDF003015C4 /* Task.m in Sources */,
 				8A0356F81A8FB776003015C4 /* Option+Create.m in Sources */,
 				8A0357041A90B1B6003015C4 /* TaskViewController.m in Sources */,
+				8A0357131A90CD04003015C4 /* OptionViewController.m in Sources */,
 				8A8BD0931A8F52D3007004E3 /* StartViewController.m in Sources */,
 				8A0356EE1A8FACDF003015C4 /* Question.m in Sources */,
 				8A8BD06B1A8F51E5007004E3 /* main.m in Sources */,
 				8A8BD0711A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld in Sources */,
 				8A0356F51A8FB751003015C4 /* Task+Create.m in Sources */,
+				8A0357081A90BF6B003015C4 /* QuestionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +365,9 @@
 				8A0356D31A8F69BB003015C4 /* TaskFetcherTests.m in Sources */,
 				8A0356DC1A8F83D7003015C4 /* TaskViewControllerTests.m in Sources */,
 				8A8BD0951A8F53AE007004E3 /* StartViewTests.m in Sources */,
+				8A03570F1A90CC2A003015C4 /* OptionViewControllerTests.m in Sources */,
 				8A0356FD1A8FC511003015C4 /* DatabaseTesting.m in Sources */,
+				8A03570B1A90BF9A003015C4 /* QuestionViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

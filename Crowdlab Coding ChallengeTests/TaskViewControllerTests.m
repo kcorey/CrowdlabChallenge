@@ -39,6 +39,7 @@
     context = [self createMemoryDatabase];
     // Put setup code here. This method is called before the invocation of each test method in the class.
     sut = [[TaskViewController alloc] init];
+    [sut view];
     
     // make sure we're pointing at the memory database
     sut.dbcontext = context;
@@ -52,6 +53,10 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     context = nil;
+    TaskFetcher *fetcher = [TaskFetcher getFetcher];
+    [fetcher forgetMe];
+    
+    fetcher = nil;
     
     [super tearDown];
 }
@@ -109,7 +114,7 @@
 //    } else {
 //        isValid = YES;
 //    }
-    NSLog(@"*****%d %s - Warning...no testing is performed to determine if remote urls are valid, or reachable, etc.", __LINE__, __PRETTY_FUNCTION__);
+    NSLog(@"*************** %d %s - Warning...no testing is performed to determine if remote urls are valid, or reachable, etc. *****************", __LINE__, __PRETTY_FUNCTION__);
     XCTAssert(YES, @"Remote URLs should be valid.");
 }
 

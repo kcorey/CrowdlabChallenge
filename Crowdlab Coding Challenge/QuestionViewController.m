@@ -1,36 +1,31 @@
 //
-//  TaskViewController.m
+//  QuestionViewController.m
 //  Crowdlab Coding Challenge
 //
 //  Created by Ken Corey on 15/02/2015.
 //  Copyright (c) 2015 Flippin' Bits Software, Ltd. All rights reserved.
 //
 
-#import "TaskViewController.h"
-#import "Task.h"
 #import "QuestionViewController.h"
+#import "Question.h"
+#import "OptionViewController.h"
 
-@interface TaskViewController ()
+@interface QuestionViewController ()
 
 @end
 
-@implementation TaskViewController
+@implementation QuestionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    TaskFetcher *fetcher = [TaskFetcher getFetcher];
-    fetcher.dbcontext = self.dbcontext;
-    
-    [self.tableView registerNib:[UINib nibWithNibName:@"TaskViewCell" bundle:nil] forCellReuseIdentifier:@"TaskViewCell"];
+    [self.tableView registerNib:[UINib nibWithNibName:@"QuestionViewCell" bundle:nil] forCellReuseIdentifier:@"QuestionViewCell"];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    [self setTitle:@"Tasks"];
-    
-    [self parseUrl];
+    [self setTitle:@"Questions"];
     
     [self.tableView reloadData];
 }
@@ -38,14 +33,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - TaskFetcher Logic
-
--(void)parseUrl {
-    TaskFetcher *fetcher = [TaskFetcher getFetcher];
-    [fetcher parseUrl:self.urlToParse];
-    self.parsedUrl = fetcher.parsedUrl;
 }
 
 #pragma mark - Table view data source
@@ -58,13 +45,13 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TaskViewCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"QuestionViewCell" forIndexPath:indexPath];
     
     UILabel *lbl = (UILabel *)[cell viewWithTag:1];
     
-    Task *task = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Question *question = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
-    [lbl setText:[NSString stringWithFormat:@"%@ (%d)",task.title,[task.questions count]]];
+    [lbl setText:[NSString stringWithFormat:@"%@ (%d)",question.title,[question.options count]]];
     
     return cell;
 }
@@ -74,14 +61,14 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSLog(@"Tapped on row %d",[indexPath row]);
-
-    QuestionViewController *question = [[QuestionViewController alloc] init];
-
-    Task *task = [[self.fetchedResultsController fetchedObjects] objectAtIndex:[indexPath row]];
-    question.task = task;
-    question.dbcontext = self.dbcontext;
     
-    [self.navigationController pushViewController:question animated:YES];    
+    OptionViewController *option = [[OptionViewController alloc] init];
+    
+    Question *question = [[self.fetchedResultsController fetchedObjects] objectAtIndex:[indexPath row]];
+    option.question = question;
+    option.dbcontext = self.dbcontext;
+    
+    [self.navigationController pushViewController:option animated:YES];
 }
 
 #pragma mark - Fetched results controller
@@ -99,7 +86,7 @@
     // Create the fetch request for the entity.
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Task" inManagedObjectContext:self.dbcontext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Question" inManagedObjectContext:self.dbcontext];
     [fetchRequest setEntity:entity];
     
     // Set the batch size to a suitable number.
@@ -109,7 +96,7 @@
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"dbid" ascending:YES];
     [fetchRequest setSortDescriptors:@[sortDescriptor ]];
     
-    [fetchRequest setPredicate:nil];
+    [fetchRequest setPredicate:[NSPredicate predicateWithFormat:@"task = %@",self.task]];
     
     // Use the sectionIdentifier property to group into sections.
     _fetchedResultsController = [[NSFetchedResultsController alloc]
@@ -128,5 +115,6 @@
     
     return _fetchedResultsController;
 }
+
 
 @end
