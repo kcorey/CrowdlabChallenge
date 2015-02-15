@@ -46,4 +46,16 @@ Mistakes I made
 
 Just to document branching...this line is inserted in the master branch, and I'm going to end up merging the NewTaskView branch into the master once done.
 
+The current repo history looks like this:
+* 7b0ba4b Added updates to support viewing and editting the answer for a given option.
+* d9f2cc2 This is a version with the option viewer as simply another table.
+*   23e322e Merge branch 'NewTaskView'
+|\
+| * 83298e6 Rebuilt the TaskViewController, being TDD driven while doing so.
+| * 7f3646f Put in some very important thoughts into the Overview.
+* | 8be29b6 Added a line to overview to demonstrate branching/merging.
+|/
+* 8c847e1 First data visible in the task screen.
+* b9e4793 First decent level.
+* 16e8600 Initial Commit
 
