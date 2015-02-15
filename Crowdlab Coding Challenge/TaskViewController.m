@@ -2,45 +2,40 @@
 //  TaskViewController.m
 //  Crowdlab Coding Challenge
 //
-//  Created by Ken Corey on 14/02/2015.
+//  Created by Ken Corey on 15/02/2015.
 //  Copyright (c) 2015 Flippin' Bits Software, Ltd. All rights reserved.
 //
 
 #import "TaskViewController.h"
 #import "Task.h"
-
 @interface TaskViewController ()
 
 @end
 
 @implementation TaskViewController
-@synthesize urlToParse,parsedUrl;
-@synthesize fetchedResultsController = _fetchedResultsController;
 
-#pragma mark - ViewController lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.urlToParse = nil;
+    
+    TaskFetcher *fetcher = [TaskFetcher getFetcher];
+    fetcher.dbcontext = self.dbcontext;
     
     [self.tableView registerNib:[UINib nibWithNibName:@"TaskViewCell" bundle:nil] forCellReuseIdentifier:@"TaskViewCell"];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self setTitle:@"Tasks"];
+    
+    [self parseUrl];
+    
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    
-    [self setTitle:@"Tasks"];
-    
-    TaskFetcher *fetcher = [TaskFetcher getFetcher];
-    fetcher.dbcontext = self.dbcontext;
-    
-    [self parseUrl];
-    
-    [self.tableView reloadData];
 }
 
 #pragma mark - TaskFetcher Logic
@@ -72,7 +67,6 @@
     return cell;
 }
 
-
 #pragma mark - Table view delegate
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -81,14 +75,13 @@
     
     // Navigation logic may go here, for example:
     // Create the next view controller.
-//    DetailViewController *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
+    //    DetailViewController *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
     
     // Pass the selected object to the new view controller.
     
     // Push the view controller.
-//    [self.navigationController pushViewController:detailViewController animated:YES];
+    //    [self.navigationController pushViewController:detailViewController animated:YES];
 }
-
 
 #pragma mark - Fetched results controller
 
@@ -133,6 +126,6 @@
     }
     
     return _fetchedResultsController;
-}    
+}
 
 @end

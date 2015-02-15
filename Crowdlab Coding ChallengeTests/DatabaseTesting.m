@@ -23,8 +23,7 @@
     TaskFetcher *fetcher;
 }
 
-- (void)setUp {
-    [super setUp];
+- (NSManagedObjectContext *)createMemoryDatabase {
     NSManagedObjectModel *managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
     
     // Coordinator with in-mem store type
@@ -32,8 +31,14 @@
     XCTAssertNotNil([coordinator addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:nil],@"Can't add persistent store with in memory type.");
     
     // Context with private queue
-    context = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType]; // Choose your concurrency type, or leave it off entirely
-    context.persistentStoreCoordinator = coordinator;
+    NSManagedObjectContext *newcontext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType]; // Choose your concurrency type, or leave it off entirely
+    newcontext.persistentStoreCoordinator = coordinator;
+    return newcontext;
+}
+
+- (void)setUp {
+    [super setUp];
+    context = [self createMemoryDatabase];
 
     fetcher = [TaskFetcher getFetcher];
     

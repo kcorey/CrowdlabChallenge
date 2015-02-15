@@ -16,18 +16,43 @@
 
 @implementation TaskViewControllerTests {
     TaskViewController *sut;
+    __block NSManagedObjectContext *context;
+}
+
+- (NSManagedObjectContext *)createMemoryDatabase {
+    NSManagedObjectModel *managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
+    
+    // Coordinator with in-mem store type
+    NSPersistentStoreCoordinator *coordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:managedObjectModel];
+    XCTAssertNotNil([coordinator addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:nil],@"Can't add persistent store with in memory type.");
+    
+    // Context with private queue
+    NSManagedObjectContext *newcontext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType]; // Choose your concurrency type, or leave it off entirely
+    newcontext.persistentStoreCoordinator = coordinator;
+    return newcontext;
 }
 
 - (void)setUp {
+    TaskFetcher *fetcher = [TaskFetcher getFetcher];
     [super setUp];
+    
+    context = [self createMemoryDatabase];
     // Put setup code here. This method is called before the invocation of each test method in the class.
     sut = [[TaskViewController alloc] init];
+    
+    // make sure we're pointing at the memory database
+    sut.dbcontext = context;
+    fetcher.dbcontext = context;
+    
+    // Now load the standard JSON into the database
     sut.urlToParse = @"";
     [sut parseUrl];
 }
 
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
+    context = nil;
+    
     [super tearDown];
 }
 
@@ -88,4 +113,20 @@
     XCTAssert(YES, @"Remote URLs should be valid.");
 }
 
+- (void)testCheckToSeeIfTaskViewHasAFetchedResultsControllerThatsNotNil {
+    XCTAssertNotNil(sut.fetchedResultsController,@"The fetchedResultsController shouldn't be nil by now.");
+}
+
+- (void)testCheckNumberOfRows {
+    XCTAssertEqual([sut tableView:nil numberOfRowsInSection:0], 5, @"For the sample data, we should have 5 rows in the table.");
+}
+
+- (void)testCheckThatTheCellForRowAtIndexPathIsNotNil {
+    NSIndexPath *newPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    XCTAssertNotNil([sut tableView:sut.tableView cellForRowAtIndexPath:newPath], @"The cellForRowAtIndexPath should be able to return a cell.");
+}
+
+- (void)testCheckRespondsToDidSelectRow {
+    XCTAssert([sut respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)], @"Must handle clicks on table rows.");
+}
 @end
