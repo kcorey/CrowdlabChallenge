@@ -2,7 +2,7 @@ So here's my stab at the Crowdlab Coding Challenge.
 
 I've used this as an excuse to go ever-so-slightly overboard and really play with TDD.  Funny thing...once you've gotten started, you don't really want to stop using TDD.  Kind of like pouring spoilt milk into a fresh batch...it ruins it all.
 
-The downside, of course, is that my TDD muscles are very weak, which means this is much slower development pattern.  The flipside, hopefully, is that it's much more likely to be bullet-proof in the long run.
+The downside, of course, is that my TDD muscles are very weak, which means this is much slower development pattern for me this time.  The flipside, hopefully, is that it's much more likely to be bullet-proof in the long run.
 
 Overview
 ========
@@ -19,16 +19,19 @@ View Controllers - the visible part of the app, the view controllers should be f
 
 Crowdlab Coding ChallengeTests
 ------------------------------
-Each view has its own tests, as well as TaskFetcher.  I've also broken the database tests out as a separate file.
-
-
+Each view has its own tests, as well as TaskFetcher and I've also broken the database tests out as a separate file.
 
 
 Weaknesses of this Challenge
 ============================
+1) The data is perfect.  That's great in a production machine.  It's horrible for testing.  I've created two different tests (empty) and (broken) for input data.  That's not adequate, though.  The test data should contain type mismatches, mispellings, omitted attributes, questions without options, tasks without questions, null values, repeated IDs, etc, and the code should "just" handle this.  Of course, that's beyond the scope of this project...just thought I'd mention it.  In future challenges, perhaps there should be a perfect data file and a rubbish data file to break tests and code upon?
+
+Mistakes I made
+===============
 1) One weakness in this design is the error handling for when inserting an object into Core Data.  If there's an error (or already more than one object with the same id) an error should be flagged...but there's no way currently to pass the error back.  That's smelly.
 2) Come to think of it, there were a few places where we could return a reference or an error.  I'm getting a powerful smell from that now.
-3) The data is perfect.  That's great in a production machine.  It's horrible for testing.  I've created two different tests (empty) and (broken) for input data.  That's not adequeate, though.  The test data should contain type mismatches, mispellings, omitted attributes, questions without options, tasks without questions, null values, repeated IDs, etc, and the code should "just" handle this.  Of course, that's beyond the scope of this project...just thought I'd mention it.  In future challenges, perhaps there should be a perfect data file and a rubbish data file to break tests and code upon?
+3) The concept of throwing JSON into a table and then reading it back on a few table view controllers seemed so easy, I was going to ramp it up a bit, and allow the user to enter the URL of another input file.  This was a mistake, as I didn't appreciate how the TDD aspect would slow me down for this first effort.  To keep things simple, I sort of bailed on the idea of remote JSON.  I'm sure the code is not a million miles away from being able to do it...I just didn't build that in.
+4) I was thrown enough while building out the database functions that I messed up on the TDD methodology.  I did a few tests with the database, but no where near enough.  Then that threw me enough that I didn't really do the TackViewController with TDD. I just wanted to see first results in the simulator. I need to take it out and do it with TDD methodology.
 
 
 

@@ -12,7 +12,6 @@
 		8A0356D31A8F69BB003015C4 /* TaskFetcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356D21A8F69BB003015C4 /* TaskFetcherTests.m */; };
 		8A0356D51A8F6A12003015C4 /* tasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356D41A8F6A12003015C4 /* tasks.json */; };
 		8A0356DC1A8F83D7003015C4 /* TaskViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356DB1A8F83D7003015C4 /* TaskViewControllerTests.m */; };
-		8A0356E01A8F9100003015C4 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356DE1A8F9100003015C4 /* TaskViewController.m */; };
 		8A0356E11A8F9100003015C4 /* TaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356DF1A8F9100003015C4 /* TaskViewController.xib */; };
 		8A0356E31A8F9FEC003015C4 /* emptytasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356E21A8F9FEC003015C4 /* emptytasks.json */; };
 		8A0356E51A8F9FFD003015C4 /* brokenTasks.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356E41A8F9FFD003015C4 /* brokenTasks.json */; };
@@ -25,6 +24,7 @@
 		8A0356FD1A8FC511003015C4 /* DatabaseTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356FC1A8FC511003015C4 /* DatabaseTesting.m */; };
 		8A0356FF1A8FF81E003015C4 /* Overview.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356FE1A8FF81E003015C4 /* Overview.txt */; };
 		8A0357011A900C91003015C4 /* TaskViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0357001A900C91003015C4 /* TaskViewCell.xib */; };
+		8A0357041A90B1B6003015C4 /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0357031A90B1B6003015C4 /* TaskViewController.m */; };
 		8A8BD06B1A8F51E5007004E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06A1A8F51E5007004E3 /* main.m */; };
 		8A8BD06E1A8F51E5007004E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06D1A8F51E5007004E3 /* AppDelegate.m */; };
 		8A8BD0711A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06F1A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld */; };
@@ -50,8 +50,6 @@
 		8A0356D21A8F69BB003015C4 /* TaskFetcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskFetcherTests.m; sourceTree = "<group>"; };
 		8A0356D41A8F6A12003015C4 /* tasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tasks.json; sourceTree = "<group>"; };
 		8A0356DB1A8F83D7003015C4 /* TaskViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewControllerTests.m; sourceTree = "<group>"; };
-		8A0356DD1A8F9100003015C4 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
-		8A0356DE1A8F9100003015C4 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
 		8A0356DF1A8F9100003015C4 /* TaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskViewController.xib; sourceTree = "<group>"; };
 		8A0356E21A8F9FEC003015C4 /* emptytasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emptytasks.json; sourceTree = "<group>"; };
 		8A0356E41A8F9FFD003015C4 /* brokenTasks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = brokenTasks.json; sourceTree = "<group>"; };
@@ -70,6 +68,8 @@
 		8A0356FC1A8FC511003015C4 /* DatabaseTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseTesting.m; sourceTree = "<group>"; };
 		8A0356FE1A8FF81E003015C4 /* Overview.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Overview.txt; sourceTree = "<group>"; };
 		8A0357001A900C91003015C4 /* TaskViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskViewCell.xib; sourceTree = "<group>"; };
+		8A0357021A90B1B6003015C4 /* TaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
+		8A0357031A90B1B6003015C4 /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
 		8A8BD0651A8F51E5007004E3 /* Crowdlab Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crowdlab Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8BD0691A8F51E5007004E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A8BD06A1A8F51E5007004E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -151,8 +151,8 @@
 				8A8BD0911A8F52D3007004E3 /* StartViewController.h */,
 				8A8BD0921A8F52D3007004E3 /* StartViewController.m */,
 				8A0356CD1A8F6147003015C4 /* StartView.xib */,
-				8A0356DD1A8F9100003015C4 /* TaskViewController.h */,
-				8A0356DE1A8F9100003015C4 /* TaskViewController.m */,
+				8A0357021A90B1B6003015C4 /* TaskViewController.h */,
+				8A0357031A90B1B6003015C4 /* TaskViewController.m */,
 				8A0356DF1A8F9100003015C4 /* TaskViewController.xib */,
 				8A0357001A900C91003015C4 /* TaskViewCell.xib */,
 				8A8BD0681A8F51E5007004E3 /* Supporting Files */,
@@ -303,9 +303,9 @@
 				8A8BD06E1A8F51E5007004E3 /* AppDelegate.m in Sources */,
 				8A0356D11A8F6839003015C4 /* TaskFetcher.m in Sources */,
 				8A0356F21A8FB738003015C4 /* Question+Create.m in Sources */,
-				8A0356E01A8F9100003015C4 /* TaskViewController.m in Sources */,
 				8A0356EB1A8FACDF003015C4 /* Task.m in Sources */,
 				8A0356F81A8FB776003015C4 /* Option+Create.m in Sources */,
+				8A0357041A90B1B6003015C4 /* TaskViewController.m in Sources */,
 				8A8BD0931A8F52D3007004E3 /* StartViewController.m in Sources */,
 				8A0356EE1A8FACDF003015C4 /* Question.m in Sources */,
 				8A8BD06B1A8F51E5007004E3 /* main.m in Sources */,
