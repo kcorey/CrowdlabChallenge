@@ -69,14 +69,7 @@
     aRect.size.height -= kbSize.height;
     if (!CGRectContainsPoint(aRect, self.answerTextArea.frame.origin) ) {
         [self.scrollView scrollRectToVisible:self.answerTextArea.frame animated:YES];
-    }
-    
-    //    NSDictionary* info = [aNotification userInfo];
-    //    CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
-    //    CGRect bkgndRect = self.answerTextArea.superview.frame;
-    //    bkgndRect.size.height += kbSize.height;
-    //    [self.answerTextArea.superview setFrame:bkgndRect];
-    //    [scrollView setContentOffset:CGPointMake(0.0, self.answerTextArea.frame.origin.y-kbSize.height) animated:YES];
+    }    
 }
 
 // Called when the UIKeyboardWillHideNotification is sent

@@ -20,7 +20,6 @@
 		8A0356F21A8FB738003015C4 /* Question+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356F11A8FB738003015C4 /* Question+Create.m */; };
 		8A0356F51A8FB751003015C4 /* Task+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356F41A8FB751003015C4 /* Task+Create.m */; };
 		8A0356F81A8FB776003015C4 /* Option+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356F71A8FB776003015C4 /* Option+Create.m */; };
-		8A0356FB1A8FB983003015C4 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356FA1A8FB983003015C4 /* Option.m */; };
 		8A0356FD1A8FC511003015C4 /* DatabaseTesting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0356FC1A8FC511003015C4 /* DatabaseTesting.m */; };
 		8A0356FF1A8FF81E003015C4 /* Overview.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8A0356FE1A8FF81E003015C4 /* Overview.txt */; };
 		8A0357011A900C91003015C4 /* TaskViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0357001A900C91003015C4 /* TaskViewCell.xib */; };
@@ -35,6 +34,8 @@
 		8A0357161A90CD1C003015C4 /* OptionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0357151A90CD1C003015C4 /* OptionViewCell.xib */; };
 		8A03571A1A90D9E1003015C4 /* OptionTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0357181A90D9E1003015C4 /* OptionTextViewController.m */; };
 		8A03571B1A90D9E1003015C4 /* OptionTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A0357191A90D9E1003015C4 /* OptionTextViewController.xib */; };
+		8A03571D1A90E2B5003015C4 /* OptionTextViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A03571C1A90E2B5003015C4 /* OptionTextViewControllerTests.m */; };
+		8A0357201A90EA28003015C4 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A03571F1A90EA28003015C4 /* Option.m */; };
 		8A8BD06B1A8F51E5007004E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06A1A8F51E5007004E3 /* main.m */; };
 		8A8BD06E1A8F51E5007004E3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06D1A8F51E5007004E3 /* AppDelegate.m */; };
 		8A8BD0711A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8A8BD06F1A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld */; };
@@ -73,8 +74,6 @@
 		8A0356F41A8FB751003015C4 /* Task+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Task+Create.m"; sourceTree = "<group>"; };
 		8A0356F61A8FB776003015C4 /* Option+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Option+Create.h"; sourceTree = "<group>"; };
 		8A0356F71A8FB776003015C4 /* Option+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Option+Create.m"; sourceTree = "<group>"; };
-		8A0356F91A8FB983003015C4 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
-		8A0356FA1A8FB983003015C4 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
 		8A0356FC1A8FC511003015C4 /* DatabaseTesting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseTesting.m; sourceTree = "<group>"; };
 		8A0356FE1A8FF81E003015C4 /* Overview.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Overview.txt; sourceTree = "<group>"; };
 		8A0357001A900C91003015C4 /* TaskViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskViewCell.xib; sourceTree = "<group>"; };
@@ -93,6 +92,9 @@
 		8A0357171A90D9E1003015C4 /* OptionTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionTextViewController.h; sourceTree = "<group>"; };
 		8A0357181A90D9E1003015C4 /* OptionTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionTextViewController.m; sourceTree = "<group>"; };
 		8A0357191A90D9E1003015C4 /* OptionTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionTextViewController.xib; sourceTree = "<group>"; };
+		8A03571C1A90E2B5003015C4 /* OptionTextViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionTextViewControllerTests.m; sourceTree = "<group>"; };
+		8A03571E1A90EA28003015C4 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		8A03571F1A90EA28003015C4 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
 		8A8BD0651A8F51E5007004E3 /* Crowdlab Coding Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crowdlab Coding Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A8BD0691A8F51E5007004E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A8BD06A1A8F51E5007004E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,6 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				8A8BD06F1A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld */,
+				8A03571E1A90EA28003015C4 /* Option.h */,
+				8A03571F1A90EA28003015C4 /* Option.m */,
 				8A0356F31A8FB751003015C4 /* Task+Create.h */,
 				8A0356F41A8FB751003015C4 /* Task+Create.m */,
 				8A0356F01A8FB738003015C4 /* Question+Create.h */,
@@ -139,8 +143,6 @@
 				8A0356EA1A8FACDF003015C4 /* Task.m */,
 				8A0356EC1A8FACDF003015C4 /* Question.h */,
 				8A0356ED1A8FACDF003015C4 /* Question.m */,
-				8A0356F91A8FB983003015C4 /* Option.h */,
-				8A0356FA1A8FB983003015C4 /* Option.m */,
 			);
 			name = "Data Models";
 			sourceTree = "<group>";
@@ -218,6 +220,7 @@
 				8A0356DB1A8F83D7003015C4 /* TaskViewControllerTests.m */,
 				8A03570A1A90BF9A003015C4 /* QuestionViewControllerTests.m */,
 				8A03570E1A90CC2A003015C4 /* OptionViewControllerTests.m */,
+				8A03571C1A90E2B5003015C4 /* OptionTextViewControllerTests.m */,
 			);
 			path = "Crowdlab Coding ChallengeTests";
 			sourceTree = "<group>";
@@ -340,7 +343,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A0356FB1A8FB983003015C4 /* Option.m in Sources */,
 				8A8BD06E1A8F51E5007004E3 /* AppDelegate.m in Sources */,
 				8A0356D11A8F6839003015C4 /* TaskFetcher.m in Sources */,
 				8A0356F21A8FB738003015C4 /* Question+Create.m in Sources */,
@@ -353,6 +355,7 @@
 				8A0356EE1A8FACDF003015C4 /* Question.m in Sources */,
 				8A8BD06B1A8F51E5007004E3 /* main.m in Sources */,
 				8A8BD0711A8F51E5007004E3 /* Crowdlab_Coding_Challenge.xcdatamodeld in Sources */,
+				8A0357201A90EA28003015C4 /* Option.m in Sources */,
 				8A0356F51A8FB751003015C4 /* Task+Create.m in Sources */,
 				8A0357081A90BF6B003015C4 /* QuestionViewController.m in Sources */,
 			);
@@ -367,6 +370,7 @@
 				8A8BD0951A8F53AE007004E3 /* StartViewTests.m in Sources */,
 				8A03570F1A90CC2A003015C4 /* OptionViewControllerTests.m in Sources */,
 				8A0356FD1A8FC511003015C4 /* DatabaseTesting.m in Sources */,
+				8A03571D1A90E2B5003015C4 /* OptionTextViewControllerTests.m in Sources */,
 				8A03570B1A90BF9A003015C4 /* QuestionViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,8 +466,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Crowdlab Coding Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -472,8 +478,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Crowdlab Coding Challenge/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
